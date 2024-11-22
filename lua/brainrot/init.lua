@@ -3,7 +3,7 @@ local M = {}
 -- Function to play the video within a Neovim buffer
 function M.play_video()
 	-- Open a new terminal buffer and play the video using mpv's --vo=tct
-	vim.cmd("new | term mpv --vo=tct --really-quiet brainrot.mp4")
+	vim.cmd("new | term mpv --vo=tct --really-quiet $HOME/.local/share/nvim/lazy/brainrot.nvim/brainrot.mp4")
 end
 
 -- Setup function for user options
